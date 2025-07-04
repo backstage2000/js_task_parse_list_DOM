@@ -5,7 +5,7 @@
 const leElement = document.querySelectorAll('li');
 const ulElement = document.querySelector('ul');
 
-function sortList(salary) {
+function sortList() {
   const sortElems = Array.prototype.slice.call(leElement).sort(function (a, b) {
     return (
       Number(a.dataset.salary.replace(/[$,]/g, '')) -
